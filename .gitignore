@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# Virtualenv
+venv/
+.env/
+.env.*  # optional if you use env files like .env.local
+
+# Django
+db.sqlite3
+*.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# VSCode
+.vscode/
+
+# macOS / Linux / Windows
+.DS_Store
+Thumbs.db
+
+# Coverage / testing
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+.pytest_cache/
+.cache/
+
+# Migrations (optional: include only after stable dev)
+**/migrations/*.py
+!**/migrations/__init__.py
