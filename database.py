@@ -1,6 +1,9 @@
 from motor.motor_asyncio import AsyncIOMotorClient
+from dotenv import load_dotenv
+import os
 
-MONGO_URL="mongodb+srv://jinine:HevAz34ivQfkgJ8P@gameserver.t3k9ki3.mongodb.net/?retryWrites=true&w=majority&appName=gameServer"
+load_dotenv()
+MONGO_URL=os.getenv('MONGO_URL')
 
 client = AsyncIOMotorClient(MONGO_URL)
 
