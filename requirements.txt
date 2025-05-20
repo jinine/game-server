@@ -3,3 +3,6 @@ uvicorn
 motor
 pydantic
 dotenv
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
