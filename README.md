@@ -1,6 +1,6 @@
 # 🚀 Simple Game Server
 
-A minimal, lightweight game server built with [FastAPI](https://fastapi.tiangolo.com/), powered by Python 3.
+A minimal, lightweight game server built with [FastAPI](https://fastapi.tiangolo.com/), powered by Python 3 and [MongoDB](https://www.mongodb.com/).
 ---
 
 ## 🛠 Features
@@ -34,7 +34,12 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Run the Server
+### 4. Create .env file, set 'your-mongodb-url' to your mongodb url string
+```bash
+MONGO_URL='your-mongodb-url'
+```
+
+### 5. Run the Server
 
 ```bash
 uvicorn main:app --reload
@@ -47,8 +52,12 @@ uvicorn main:app --reload
 * Swagger UI → [http://localhost:8000/docs](http://localhost:8000/docs)
 * ReDoc → [http://localhost:8000/redoc](http://localhost:8000/redoc)
 
+---
+
 ## 🧾 License
 MIT -  free to modify, build on and deploy commercially
+
+---
 
 ## 💬 Contact / Contribution
 Made with ❤️ by Tristan Engen
