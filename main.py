@@ -3,6 +3,7 @@ from routes import player
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 import os
+from routes.matchmaking import router as matchmaking_router
 
 load_dotenv()
 FRONTEND_URL=os.getenv('FRONTEND_URL')
@@ -28,3 +29,4 @@ def health():
     return {"message": "Healthy!"}
 
 app.include_router(player.router)
+app.include_router(matchmaking_router)
