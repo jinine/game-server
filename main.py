@@ -1,12 +1,18 @@
 from fastapi import FastAPI
 from routes import player
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+FRONTEND_URL=os.getenv('FRONTEND_URL')
 
 app = FastAPI()
 
 origins = [
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+        FRONTEND_URL
         ]
 
 app.add_middleware(
