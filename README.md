@@ -34,9 +34,10 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Create .env file, set 'your-mongodb-url' to your mongodb url string
+### 4. Create .env file, set 'your-mongodb-url' to your mongodb url string, set your secret key to 'your-secret-key'
 ```bash
 MONGO_URL='your-mongodb-url'
+SECRET_KEY='your-secret-key'
 ```
 
 ### 5. Run the Server
